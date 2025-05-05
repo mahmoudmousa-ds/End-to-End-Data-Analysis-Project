@@ -1,5 +1,5 @@
 # 📊 Project Management Dashboard - README
-
+![alt text](img.png)
 ## 📁 Overview
 
 This project is a data-driven dashboard designed to monitor and analyze project and employee performance across different departments using a SQL Server database and Power BI.
