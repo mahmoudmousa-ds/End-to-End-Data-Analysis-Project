@@ -1,84 +1,54 @@
-# 📊 Project Management Dashboard - README
-![alt text](img.png)
-## 📁 Overview
+# 📊 End-to-End Project - Data Analysis & Power BI Dashboard Development
+![imgae](img.png)
+## 🚀 Overview
 
-This project is a data-driven dashboard designed to monitor and analyze project and employee performance across different departments using a SQL Server database and Power BI.
+This project involves end-to-end data handling, from data scraping and organization to building an interactive dashboard using Power BI. The goal is to manage workforce data, assess financial risks, and monitor project health effectively.
 
-## 📑 Task Brief
+## 🔧 Tools & Technologies Used
 
-**Subject: Request for Data Analysis & Power BI Dashboard Development**
+- **Excel**: Used to organize and clean the scraped data.
+- **Microsoft SQL Server**: Data was imported for better management and structure.
+- **CTEs (Common Table Expressions)**: Used to simplify complex queries, making them easier to read and maintain..
+- **Power BI**: Used for building the final interactive dashboard that tracks project and employee performance.
 
-Dear Data Analyst,
+## 🧱 Project Workflow
 
-Your expertise is needed to organize data and develop a dashboard to help us:
+1. **Data Collection & Organization**:
+    - Scraped data was organized in Excel for easy access and cleaning.
+    - The Excel sheets were then imported into **Microsoft SQL Server** to centralize and structure the data.
 
-* Manage workforce
-* Understand financial risks
-* Monitor project health effectively
+2. **Security via CTEs**:
+    - Built **queries using CTEs** to ensure that sensitive data is accessible only by authorized personnel.
+    - This step guarantees that the data analyst can only view the necessary parts of the data.
 
-### 🔍 Key Question to Address:
+3. **Data Analysis**:
+    - Data was handed over to the **Data Analyst** to analyze using the Power BI dashboard.
+    - The dashboard focuses on key metrics such as employee performance, department goals, budget analysis, and project health.
 
-**"Which projects and departments are at risk of being over budget or underperforming?"**
+4. **Power BI Dashboard**:
+    - A comprehensive Power BI dashboard was developed to display the data.
+    - The dashboard allows users to filter and drill down on department-wise data, project status, salary distributions, and more.
 
-> *(Note: Department budgets are set at 2-year intervals; assess if annual budgets can cover expenses.)*
+## 🎯 Key Use Cases Addressed
 
-### ✍️ Tasks:
+- **Risk Management**: Flagging over-budget departments and underperforming projects for corrective action.
+- **Budget Management**: Assessing if annual budgets are sufficient to cover expenses based on department goals and project costs.
+- **Workforce Management**: Tracking employee performance, salary distribution, and department-wise allocation.
 
-* **Identify Risks**: Flag over-budget departments or underperforming projects for corrective action.
-* **Data Organization**: Structure data (employee info, salaries, budgets, project details) for reporting.
-* **Dashboard Development**: Collaborate to build a Power BI dashboard tracking:
+## 🔍 Key Questions Answered
 
-  1. Employee performance
-  2. Salary distribution
-  3. Departmental project management
+- **Which departments are over budget?**
+- **Which projects are underperforming or need attention?**
+- **How are employee performances tracked across different departments?**
 
-Best regards,
-Manager
+## 📊 Dashboard Features
 
-## 🧱 Database Structure
+- **Project Budget Distribution**: Visualizes total budget per project and per department.
+- **Department Goals**: Provides insights on department-wise budget allocation and performance.
+- **Employee Data**: Displays employee details, including salary, performance, and department allocation.
 
-The SQL Server database named **`project`** includes the following main tables:
+## 🛠️ How to Run
 
-| Table Name                | Description                                                          |
-| ------------------------- | -------------------------------------------------------------------- |
-| `dbo.completed_projects`  | Stores details of finished projects including budget and outcomes.   |
-| `dbo.upcoming_projects`   | Contains future/planned project details.                             |
-| `dbo.projects`            | Centralized list of all projects.                                    |
-| `dbo.project_assignments` | Tracks which employees are assigned to which projects.               |
-| `dbo.employees`           | Employee details like name, job title, department, and compensation. |
-| `dbo.departments`         | Department information including goals and budgets.                  |
-
-## 📈 Dashboard Insights
-
-The Power BI dashboard utilizes data from the SQL Server to provide:
-
-* **Project Budget Distribution**: Visualizes total budget per project and per department.
-* **Department Goals Overview**: Tracks key financials like salary costs, capital, and 2-year budgets.
-* **Employee Allocation**: Shows assignments and distribution of human resources across projects.
-* **Capital Management**: Assesses departmental capital utilization and gaps.
-* **Risk Identification**: Highlights departments and projects at risk of over-expenditure or underperformance.
-
-## ⚙️ Data Import
-
-Data was imported into Power BI using a custom SQL query (see `Query used to import data in power bi.sql`). This query pulls comprehensive project and employee data for visualization.
-
-## 🧪 Sample Insight
-
-Example from dashboard:
-
-* **Marketing** department has the goal to “Increase brand awareness” with a **2-Year Budget** of \$800,000 and **Capital** of \$369,000.
-* **Engineering** handles high-investment projects with a **Budget** of \$1.2M and **Capital** of \$770,000.
-
-## 📌 How to Use
-
-1. Set up the SQL Server and import data into the respective tables as per the schema (`tables Schema.png`).
-2. Open Power BI and connect to the SQL Server database.
-3. Load data using the provided SQL query.
-4. Explore visual insights via filters (e.g., department, project status).
-
-## 👨‍💻 Developer Info
-
-**Michael Johnson**
-Job Title: Data Scientist
-Department: Sales
-Compensation: \$95K
+1. **Set up the SQL Server** and import data into the respective tables as per the schema provided.
+2. **Load Data into Power BI** using the SQL queries provided.
+3. **Explore Visual Insights** through filters such as project status, department, or salary.
